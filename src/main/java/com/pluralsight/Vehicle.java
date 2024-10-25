@@ -10,5 +10,10 @@ public class Vehicle {
     private String make;
     private String model;
     private int odometer;
+    private double price;
+    private String vehicleType;
+
+    private String color;
+
 
 }

@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
+
 public class Dealership {
 
     /**
@@ -11,7 +13,11 @@ public class Dealership {
     private String address;
     private String phone;
 
+    private static final ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
 
-
-
+    public Dealership(String name, String address, String phone) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+    }
 }
