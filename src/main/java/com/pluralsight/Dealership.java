@@ -29,8 +29,7 @@ public class Dealership {
     }
 
 
-    public List<Vehicle> getVehiclesByYear(double min, double max){
-        return null;
+    public List<Vehicle> getVehiclesByYear(double min, double max){return null;
     }
 
     public List<Vehicle> getVehiclesByColor(String color) {
@@ -45,6 +44,9 @@ public class Dealership {
      return null;
     }
 
+    public List<Vehicle> getAllVehicle (String vehicle) {
+        return null;
+    }
 
 
 }

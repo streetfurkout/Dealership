@@ -15,5 +15,12 @@ public class Vehicle {
 
     private String color;
 
+    public static void addVehicle(){
+
+    }
+    public static void removeVehicle(){
+
+    }
+
 
 }
