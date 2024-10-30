@@ -90,5 +90,10 @@ public class Vehicle {
     public void setColor(String color) {
         this.color = color;
     }
-    
+
+    @Override
+    public String toString() {
+        return year + " " + make + " " + model + " (" + vehicleType + ", " + color + ") - $" + price;
+    }
 }
+    
