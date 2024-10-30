@@ -36,7 +36,7 @@ public class Dealership {
         return null;
     }
 
-    public  List<Vehicle> getVehiclesByMileage (double min, double max) {
+    public  List<Vehicle> getVehiclesByMileage () {
         return  null;
     }
 
@@ -44,10 +44,15 @@ public class Dealership {
      return null;
     }
 
-    public List<Vehicle> getAllVehicle (String vehicle) {
+    public List<Vehicle> getAllVehicle () {
         return null;
     }
 
+    public void addVehicle() {
 
+    }
+    public void removeVehicle() {
+
+    }
 }
 

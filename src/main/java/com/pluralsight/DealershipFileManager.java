@@ -7,4 +7,13 @@ public class DealershipFileManager {
      * vehicles from the file. It will also be responsible for saving a dealership and the vehicles back into the
      * file in the same pipe-delimited format.
      */
+    public Dealership getDealership() {
+
+
+    }
+
+    public void saveDealership(Dealership dealership) {
+
+
+    }
 }

@@ -15,12 +15,15 @@ public class Vehicle {
 
     private String color;
 
-    public static void addVehicle(){
 
+    public Vehicle(int vin, int year, String make, String model, int odometer, double price, String vehicleType, String color) {
+        this.vin = vin;
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.odometer = odometer;
+        this.price = price;
+        this.vehicleType = vehicleType;
+        this.color = color;
     }
-    public static void removeVehicle(){
-
-    }
-
-
 }
