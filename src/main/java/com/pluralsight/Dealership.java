@@ -1,58 +1,73 @@
-package com.pluralsight;
+package com.dealership;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Dealership {
-
-    /**
-     * Will hold information about the dealership (name,address, ...) and maintain list of vehicles.
-     * Since it has a list of vehicles, it will also have methods that search the list for matching
-     * vehicles as well as add/remove vehicles
-     */
     private String name;
     private String address;
     private String phone;
+    private ArrayList<Vehicle> inventory;
 
-    private static final ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
-
+    // Constructor
     public Dealership(String name, String address, String phone) {
         this.name = name;
         this.address = address;
         this.phone = phone;
+        this.inventory = new ArrayList<>();
     }
+
+    public void addVehicle(Vehicle vehicle) {
+        inventory.add(vehicle);
+    }
+
+    public List<Vehicle> getAllVehicles() {
+        return new ArrayList<>(inventory);
+    }
+
+    // Stub methods for search functionality
     public List<Vehicle> getVehiclesByPrice(double min, double max) {
-        return null;
-    }
-    public List<Vehicle> getVehiclesByMakeModel(String make, String model){
-        return null;
+        return null; // To be implemented later
     }
 
+    public List<Vehicle> getVehiclesByMakeModel(String make, String model) {
+        return null; // To be implemented later
+    }
 
-    public List<Vehicle> getVehiclesByYear(double min, double max){return null;
+    public List<Vehicle> getVehiclesByYear(int min, int max) {
+        return null; // To be implemented later
     }
 
     public List<Vehicle> getVehiclesByColor(String color) {
-        return null;
+        return null; // To be implemented later
     }
 
-    public  List<Vehicle> getVehiclesByMileage () {
-        return  null;
+    public List<Vehicle> getVehiclesByMileage(int min, int max) {
+        return null; // To be implemented later
     }
 
-    public List<Vehicle> getVehiclesByType (String type) {
-     return null;
+    public List<Vehicle> getVehiclesByType(String vehicleType) {
+        return null; // To be implemented later
     }
 
-    public List<Vehicle> getAllVehicle () {
-        return null;
+    public void removeVehicle(Vehicle vehicle) {
+        // To be implemented later
     }
 
-    public void addVehicle() {
-
+    // Getters
+    public String getName() {
+        return name;
     }
-    public void removeVehicle() {
 
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public ArrayList<Vehicle> getInventory() {
+        return inventory;
     }
 }
-

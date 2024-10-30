@@ -96,4 +96,4 @@ public class Vehicle {
         return year + " " + make + " " + model + " (" + vehicleType + ", " + color + ") - $" + price;
     }
 }
-    
+
