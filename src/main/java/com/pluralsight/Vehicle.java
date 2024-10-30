@@ -1,32 +1,25 @@
-package com.pluralsight;
-
 public class Vehicle {
-
-    /**
-     * hold information about specific vehicle
-     */
     private int vin;
     private int year;
     private String make;
     private String model;
+    private String vehicleType; // car, truck, SUV, van
+    private String color;
     private int odometer;
     private double price;
-    private String vehicleType;
 
-    private String color;
-
-
-    public Vehicle(int vin, int year, String make, String model, int odometer, double price, String vehicleType, String color) {
+    public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
         this.year = year;
         this.make = make;
         this.model = model;
-        this.odometer = odometer;
-        this.price = price;
         this.vehicleType = vehicleType;
         this.color = color;
+        this.odometer = odometer;
+        this.price = price;
     }
 
+    // Getters and Setters
     public int getVin() {
         return vin;
     }
@@ -59,22 +52,6 @@ public class Vehicle {
         this.model = model;
     }
 
-    public int getOdometer() {
-        return odometer;
-    }
-
-    public void setOdometer(int odometer) {
-        this.odometer = odometer;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getVehicleType() {
         return vehicleType;
     }
@@ -91,9 +68,21 @@ public class Vehicle {
         this.color = color;
     }
 
-    @Override
-    public String toString() {
-        return year + " " + make + " " + model + " (" + vehicleType + ", " + color + ") - $" + price;
+    public int getOdometer() {
+        return odometer;
     }
-}
 
+    public void setOdometer(int odometer) {
+        this.odometer = odometer;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+
+}
