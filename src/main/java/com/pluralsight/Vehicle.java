@@ -1,9 +1,11 @@
+package com.pluralsight;
+
 public class Vehicle {
     private int vin;
     private int year;
     private String make;
     private String model;
-    private String vehicleType; // car, truck, SUV, van
+    private String vehicleType; // (car, truck, etc.)
     private String color;
     private int odometer;
     private double price;
@@ -19,7 +21,6 @@ public class Vehicle {
         this.price = price;
     }
 
-    // Getters and Setters
     public int getVin() {
         return vin;
     }
@@ -83,6 +84,7 @@ public class Vehicle {
     public void setPrice(double price) {
         this.price = price;
     }
-
-
+    @Override
+    public String toString() {    return
+            vin + "|" + year + "|" + odometer + "|" + make + "|" + model + "|" + vehicleType + "|" + color + "|" + price;}
 }
